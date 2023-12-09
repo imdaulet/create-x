@@ -1,0 +1,18 @@
+/* Error: expected "{".
+ *    ,
+ * 71 |         font-weight: 700;``
+ *    |                            ^
+ *    '
+ *   featured.scss 71:28  @import
+ *   style.scss 31:9      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 71 \2502          font-weight: 700;``\d\a    \2502                             ^\a    \2575 \a   featured.scss 71:28  @import\a   style.scss 31:9      root stylesheet';
+}
